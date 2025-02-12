@@ -35,3 +35,26 @@ footer {
   padding: 30px 0 0 0;
   color: #666666;
 }
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 30px 0 0 0;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-size: 35px;
+  line-height: 45px;
+}
+.weather-app-details {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #aca6b3;
+}
+.pink {
+  color: #f65282;
+  font-weight: bolder;
+}
