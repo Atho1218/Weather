@@ -6,6 +6,13 @@ body {
   background-color: white;
   margin: 30px auto;
   max-width: 600px;
-  border: 1px solid #f9f7fe;
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+}
+.search-input {
+  background-color: #f9f7fe;
+  padding: 50px;
+  border: none;
   border-radius: 20px;
 }
