@@ -53,8 +53,28 @@ function displayTemperature(event) {
 
   searchCity(searchInput.value);
 }
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = "";
 
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `  <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sun</div>
+            <div class="weather-forecast-icon">☀️</div>
+            <div class="weather-forecast-temperatures">
+              <strong>17°</strong>
+              <div class="weather-forecast-temperature">15°</div>
+            </div>
+          </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", displayTemperature);
 
 searchCity("Lisbon");
+displayForecast();
